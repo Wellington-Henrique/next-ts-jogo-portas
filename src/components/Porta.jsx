@@ -10,6 +10,7 @@ export default function Porta(props) {
                     </div>
                 </div>
             </div>
+            <div className={styles.chao}></div>
         </div>
     )
 }

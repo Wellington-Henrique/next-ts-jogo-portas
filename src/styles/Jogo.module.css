@@ -12,3 +12,11 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+.botoes button{
+    background-color: #c0382c;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    padding: 10px 25px;
+}

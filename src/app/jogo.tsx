@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from "react";
+import Link from "next/link";
+
 import Porta from "../components/Porta";
 
 import { atualizarPortas, criarPortas } from "../functions/portas";
@@ -23,7 +25,7 @@ export default function Jogo() {
       </div>
       
       <div className={styles.botoes}>
-
+        <Link href='/' />
       </div>
     </div>
   )

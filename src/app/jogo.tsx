@@ -5,9 +5,9 @@ import Porta from "../components/Porta";
 
 import { atualizarPortas, criarPortas } from "../functions/portas";
 
-import Jogo from "./jogo";
+import styles from '../styles/Jogo.module.css';
 
-export default function Home() {
+export default function Jogo() {
   const [portas, setPortas] = useState(criarPortas(3, 2));
   
   const renderizarPortas = () => {
@@ -17,8 +17,14 @@ export default function Home() {
   }
 
   return (
-    <div>
-      <h1>Início</h1>
+    <div id={styles.jogo}>
+      <div className={styles.portas}>
+        {renderizarPortas()}
+      </div>
+      
+      <div className={styles.botoes}>
+
+      </div>
     </div>
   )
 }
